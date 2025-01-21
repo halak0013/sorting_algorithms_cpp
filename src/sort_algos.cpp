@@ -2,9 +2,9 @@
 #include "include/sort_algos.hpp"
 using namespace std;
 
-vector<double> runAlgo(SType type, vector<char> i_a)
+vector<u_long> runAlgo(SType type, vector<char> i_a)
 {
-    int c = 0;
+    u_long c = 0;
     auto start = chrono::high_resolution_clock::now();
     switch (type)
     {
@@ -39,18 +39,17 @@ vector<double> runAlgo(SType type, vector<char> i_a)
 
     // measure time between two lines of code
     auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
-    double seconds = static_cast<double>(duration.count()) / 1000000.0;
-    return {seconds, static_cast<double>(c)};
+    return {static_cast<unsigned long>(duration.count()), c};
 }
 
-int heapSort(vector<char> i_a)
+u_long heapSort(vector<char> i_a)
 {
     HeapSort sortObj = HeapSort();
     sortObj.heapSort(i_a);
     return sortObj.c;
 }
 
-int quickSortLH(vector<char> i_a, bool isHoare)
+u_long quickSortLH(vector<char> i_a, bool isHoare)
 {
     QuickHoare sortObj = QuickHoare();
     if (isHoare)
@@ -60,14 +59,14 @@ int quickSortLH(vector<char> i_a, bool isHoare)
     return sortObj.c;
 }
 
-int mergeSort(vector<char> i_a)
+u_long mergeSort(vector<char> i_a)
 {
     MergeSort sortObj(i_a);
     sortObj.sort();
     return sortObj.c;
 }
 
-int mergeSort3(vector<char> i_a)
+u_long mergeSort3(vector<char> i_a)
 {
     MergeSort3 sortObj(i_a);
     sortObj.sort(i_a);
@@ -75,9 +74,9 @@ int mergeSort3(vector<char> i_a)
 }
 
 // https://bilgisayarkavramlari.com/2008/12/20/kabuk-siralama-shell-sort/
-int shellSort(vector<char> i_a)
+u_long shellSort(vector<char> i_a)
 {
-    int c = 0;
+    u_long c = 0;
     unsigned int count = i_a.size();
     int gap = count / 2;
     while (gap > 0)
@@ -95,9 +94,9 @@ int shellSort(vector<char> i_a)
     return c;
 }
 
-int insertionSort(vector<char> i_a)
+u_long insertionSort(vector<char> i_a)
 {
-    int c = 0;
+    u_long c = 0;
     unsigned int count = i_a.size();
 
     for (int i = 0; i < count; i++)
@@ -114,9 +113,9 @@ int insertionSort(vector<char> i_a)
     return c;
 }
 
-int sellectionSort(vector<char> i_a)
+u_long sellectionSort(vector<char> i_a)
 {
-    int c = 0;
+    u_long c = 0;
     unsigned int count = i_a.size();
     int min_i = 0;
     for (int i = 0; i < count - 1; i++)
@@ -146,4 +145,29 @@ void print(vector<char> i_a)
     for (int i = 0; i < i_a.size(); i++)
         cout << i_a[i] << " ";
     cout << endl;
+}
+
+std::string getAlgoName(SType type)
+{
+    switch (type)
+    {
+    case SELLECTION:
+        return "Selection Sort";
+    case INSERTION:
+        return "Insertion Sort";
+    case SHEELSORT:
+        return "Shell Sort";
+    case MERGE:
+        return "Merge Sort";
+    case WAY_3_MERGE:
+        return "Way 3 Merge Sort";
+    case QUICK_LOMUTO:
+        return "Quick Sort Lomuto";
+    case QUICK_HOARE:
+        return "Quick Sort Hoare";
+    case HEAP:
+        return "Heap Sort";
+    default:
+        return "Unknown";
+    }
 }

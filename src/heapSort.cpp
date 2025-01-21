@@ -6,10 +6,10 @@ HeapSort::HeapSort()
 
 void HeapSort::heapify(vector<char> &liste, int N, int i)
 {
-    c++;
     int largest = i;
     int l = 2 * i + 1;
     int r = 2 * i + 2;
+    c++;
     if (l < N && liste[l] > liste[largest])
         largest = l;
 

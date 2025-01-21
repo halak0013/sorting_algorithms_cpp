@@ -1,0 +1,73 @@
+time,times_worked,type,input_type,input_quantity
+1.638239,511952001,Selection Sort,random,32K_string_1
+2.726770,266126115,Insertion Sort,random,32K_string_1
+0.007138,321213,Shell Sort,random,32K_string_1
+0.027570,433948,Merge Sort,random,32K_string_1
+0.061803,313872,Way 3 Merge Sort,random,32K_string_1
+0.168219,19859346,Quick Sort Lomuto,random,32K_string_1
+0.003664,290895,Quick Sort Hoare,random,32K_string_1
+0.008971,450948,Heap Sort,random,32K_string_1
+6.388741,2047904001,Selection Sort,random,64K_string_1
+10.905719,1063433616,Insertion Sort,random,64K_string_1
+0.015556,755454,Shell Sort,random,64K_string_1
+0.055403,930127,Merge Sort,random,64K_string_1
+0.198495,674476,Way 3 Merge Sort,random,64K_string_1
+0.670502,79117970,Quick Sort Lomuto,random,64K_string_1
+0.007464,600212,Quick Sort Hoare,random,64K_string_1
+0.018220,962731,Heap Sort,random,64K_string_1
+25.560665,8191808001,Selection Sort,random,128K_string_1
+43.688155,4272385479,Insertion Sort,random,128K_string_1
+0.035471,1817150,Shell Sort,random,128K_string_1
+0.112098,1986681,Merge Sort,random,128K_string_1
+0.718163,1437615,Way 3 Merge Sort,random,128K_string_1
+2.665851,315773255,Quick Sort Lomuto,random,128K_string_1
+0.015697,1339904,Quick Sort Hoare,random,128K_string_1
+0.038559,2047085,Heap Sort,random,128K_string_1
+1.596770,511984000,Selection Sort,reversed,32K_string_1
+5.210074,512016000,Insertion Sort,reversed,32K_string_1
+0.002353,89298,Shell Sort,reversed,32K_string_1
+0.026160,241430,Merge Sort,reversed,32K_string_1
+0.060746,313883,Way 3 Merge Sort,reversed,32K_string_1
+0.843411,99958692,Quick Sort Lomuto,reversed,32K_string_1
+0.006054,742107,Quick Sort Hoare,reversed,32K_string_1
+0.007587,421410,Heap Sort,reversed,32K_string_1
+6.394872,2047968000,Selection Sort,reversed,64K_string_1
+20.936976,2048032000,Insertion Sort,reversed,64K_string_1
+0.004809,178517,Shell Sort,reversed,64K_string_1
+0.052705,514840,Merge Sort,reversed,64K_string_1
+0.196034,674486,Way 3 Merge Sort,reversed,64K_string_1
+6.947305,822862843,Quick Sort Lomuto,reversed,64K_string_1
+0.013761,2053996,Quick Sort Hoare,reversed,64K_string_1
+0.016231,905717,Heap Sort,reversed,64K_string_1
+25.581491,8191936000,Selection Sort,reversed,128K_string_1
+83.518801,8192064000,Insertion Sort,reversed,128K_string_1
+0.010147,360229,Shell Sort,reversed,128K_string_1
+0.106385,1093658,Merge Sort,reversed,128K_string_1
+0.712980,1437628,Way 3 Merge Sort,reversed,128K_string_1
+7.594092,899488732,Quick Sort Lomuto,reversed,128K_string_1
+0.027355,2595505,Quick Sort Hoare,reversed,128K_string_1
+0.034552,1930506,Heap Sort,reversed,128K_string_1
+1.593891,511952001,Selection Sort,sorted,32K_string_1
+0.202830,19721070,Insertion Sort,sorted,32K_string_1
+0.001485,0,Shell Sort,sorted,32K_string_1
+0.025859,273513,Merge Sort,sorted,32K_string_1
+0.060598,313872,Way 3 Merge Sort,sorted,32K_string_1
+4.325110,511984000,Quick Sort Lomuto,sorted,32K_string_1
+0.009535,190465,Quick Sort Hoare,sorted,32K_string_1
+0.007285,412271,Heap Sort,sorted,32K_string_1
+6.426521,2047904001,Selection Sort,sorted,64K_string_1
+0.810879,78825594,Insertion Sort,sorted,64K_string_1
+0.003184,0,Shell Sort,sorted,64K_string_1
+0.052183,572955,Merge Sort,sorted,64K_string_1
+0.200082,674476,Way 3 Merge Sort,sorted,64K_string_1
+17.315804,2047968000,Quick Sort Lomuto,sorted,64K_string_1
+0.020747,412857,Quick Sort Hoare,sorted,64K_string_1
+0.015488,877908,Heap Sort,sorted,64K_string_1
+25.534030,8191808001,Selection Sort,sorted,128K_string_1
+3.238974,315207899,Insertion Sort,sorted,128K_string_1
+0.006867,0,Shell Sort,sorted,128K_string_1
+0.105094,1215778,Merge Sort,sorted,128K_string_1
+0.707165,1437615,Way 3 Merge Sort,sorted,128K_string_1
+69.310656,8191936000,Quick Sort Lomuto,sorted,128K_string_1
+0.045475,889471,Quick Sort Hoare,sorted,128K_string_1
+0.033693,1863974,Heap Sort,sorted,128K_string_1

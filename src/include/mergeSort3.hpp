@@ -2,6 +2,8 @@
 #define MERGESORT3_HPP
 #include <vector>
 #include <iostream>
+
+typedef unsigned long u_long;
 using namespace std;
 
 //https://gist.github.com/Akohrr/4dfd2cd4df43489269a30abce9044120
@@ -17,6 +19,6 @@ public:
     MergeSort3(vector<char> listToSort);
     vector<char> sort(vector<char>);
     void merge(vector<char> &liste,int s, int mid1, int mid2, int end);
-    int c=0;
+    u_long c=0;
 };
 #endif // MERGESORT3_HPP

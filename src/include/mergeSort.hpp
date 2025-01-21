@@ -2,7 +2,7 @@
 #define MERGESORT_HPP
 #include <vector>
 
-
+typedef unsigned long u_long;
 using namespace std;
 
 class MergeSort
@@ -18,7 +18,7 @@ public:
 
     vector<char> getList();
     void sort();
-    int c=0;
+    u_long c=0;
 
 };
 #endif // MERGESORT_HPP

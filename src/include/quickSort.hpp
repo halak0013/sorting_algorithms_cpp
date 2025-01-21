@@ -1,4 +1,6 @@
 #include <vector>
+
+typedef unsigned long u_long;
 using namespace std;
 //https://www.geeksforgeeks.org/hoares-vs-lomuto-partition-scheme-quicksort/
 class QuickHoare
@@ -12,5 +14,5 @@ private:
 
 public:
     void quickSort(vector<char> liste, bool isHoare);
-    int c = 0;
+    u_long c = 0;
 };

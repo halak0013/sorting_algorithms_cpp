@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+typedef unsigned long u_long;
+
 //https://www.geeksforgeeks.org/heap-sort/
 class HeapSort
 {
@@ -10,6 +12,6 @@ private:
 public:
     HeapSort();
     void heapSort(vector<char> liste);
-    int c = 0;
+    u_long c = 0;
 };
 

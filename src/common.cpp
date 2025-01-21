@@ -1,3 +1,4 @@
+#include <iostream>
 enum SType
 {
     SELLECTION,
@@ -9,3 +10,4 @@ enum SType
     QUICK_HOARE,
     HEAP
 };
+
